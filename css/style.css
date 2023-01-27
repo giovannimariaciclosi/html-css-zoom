@@ -27,6 +27,37 @@ font-size: 1em;
   height: 100vh;
 }
 
+/* icone superiori */
+
+.change-view-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.8em;
+  position: absolute;
+  right: 0;
+  margin-top: 0.4em;
+  margin-right: 0.4em;
+}
+
+.change-view-container .fa-solid {
+  font-size: 1em;
+}
+
+.change-view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2em;
+  padding: 0.1em 0.3em;
+  background-color: #4a4a4a;
+  border-radius: 0.3em;
+}
+
+/* /icone superiori */
+
+
+/* parte centrale */
+
 .video {
   height: calc(100% - 100px);
   background-color: #000000;
@@ -40,6 +71,7 @@ font-size: 1em;
   flex-wrap: wrap;
   gap: 0.3em;
   row-gap: 0.5em;
+  overflow-y: auto;
 }
 
 .users {
@@ -64,6 +96,10 @@ font-size: 1em;
 .mute-microphone .fa-solid {
   font-size: 1em;
 }
+
+/* /parte centrale */
+
+/* player */
 
 .player {
   height: 100px;
