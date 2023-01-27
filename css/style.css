@@ -4,6 +4,25 @@
   box-sizing: border-box;
 }
 
+body {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+.fa-solid {
+  color: white;
+  font-size: 2em;
+}
+
+.fa-chevron-up {
+font-size: 1em;
+}
+
+.fa-share-from-square {
+  color: #4bc800;
+}
+
 .container {
   height: 100vh;
 }
@@ -15,6 +34,59 @@
 
 .player {
   height: 100px;
-  display: flex;
   background-color: #222222;
+  display: flex;
+  align-items: center;
+}
+
+.controls {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1em;
+}
+
+.left-controls {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.center-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.4em;
+}
+
+.right-controls {
+  /* position: relative; */
+  height: 100%;
+  padding: 0 1.5em;
+  display: flex;
+  align-items: center;
+  color: white;
+  transition: color .3s; background-color: .3s;
+  cursor: pointer;
+}
+
+.right-controls:hover {
+  color: red;
+  background-color: #4a4a4a;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.chevron {
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  cursor: pointer;
 }
